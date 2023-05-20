@@ -459,18 +459,82 @@ btnSort.addEventListener('click', e => {
   sorted = !sorted;
 });
 
-const x = new Array(7);
-x.fill(5, 2, 4);
-console.log(x);
+// const x = new Array(7);
+// x.fill(5, 2, 4);
+// console.log(x);
 
-const y = Array.from({ length: 5 }, () => 5);
-console.log(y);
+// const y = Array.from({ length: 5 }, () => 5);
+// console.log(y);
 
-const z = Array.from({ length: 9 }, (_, i) => i + 1);
-console.log(z);
+// const z = Array.from({ length: 9 }, (_, i) => i + 1);
+// console.log(z);
 
-const random = Array.from({ length: 10 }, (_, i) =>
-  Math.trunc(Math.random() * i + 1)
-);
+// const random = Array.from({ length: 10 }, (_, i) =>
+//   Math.trunc(Math.random() * i + 1)
+// );
 
-console.log(random);
+// console.log(random);
+
+// labelBalance.addEventListener('click', () => {
+//   const movementsUI = Array.from(
+//     document.querySelectorAll('.movements__value'),
+//     el => Number(el.textContent)
+//   );
+//   console.log(movementsUI);
+//   const movementsUI2 = [...document.querySelectorAll('.movements__value')];
+//   console.log(movementsUI2.map(el => Number(el.textContent)));
+// });
+
+// const totalDeposited = accounts
+//   .flatMap(acc => acc.movements)
+//   .filter(mov => mov > 0)
+//   .reduce((acc, i) => acc + i, 0);
+
+// console.log(totalDeposited);
+
+// const Deposited1000 = accounts
+//   .flatMap(acc => acc.movements)
+//   .filter(mov => mov > 1000).length;
+
+// console.log(Deposited1000);
+
+// const Deposited1000 = accounts
+//   .flatMap(acc => acc.movements)
+//   .reduce((count, cur) => (cur > 1000 ? ++count : count), 0);
+
+// console.log(Deposited1000);
+
+// const { deposite, withdraw } = accounts
+//   .flatMap(acc => acc.movements)
+//   .reduce(
+//     (sum, cur) => {
+//       cur > 0 ? (sum.deposite += cur) : (sum.withdraw += cur);
+//       return sum;
+//     },
+//     { deposite: 0, withdraw: 0 }
+//   );
+
+// console.log(deposite, withdraw);
+
+// const { deposite, withdraw } = accounts
+//   .flatMap(acc => acc.movements)
+//   .reduce(
+//     (sum, cur) => {
+//       sum[cur > 0 ? 'deposite' : 'withdraw'] += cur;
+//       return sum;
+//     },
+//     { deposite: 0, withdraw: 0 }
+//   );
+
+// console.log(deposite, withdraw);
+
+// const capitaliseWord = function (title) {
+//   const exception = ['a', 'and', 'or', 'the', 'of', 'but', 'to'];
+//   const capitalWords = title
+//     .toLowerCase()
+//     .split(' ')
+//     .map(word =>
+//       exception.includes(word) ? word : word[0].toUpperCase() + word.slice(1)
+//     );
+//   return capitalWords.join(' ');
+// };
